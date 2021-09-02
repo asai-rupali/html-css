@@ -22,13 +22,14 @@
                 <a href="flexbox.html"><strong>Flexbox</strong></a>
                 <a href="css.html"><strong>CSS Grid</strong></a>
             </nav>
+            <p>Test Paragraph</p>
         </header>
         <article>
-            <p>Test</p>
+            <!-- <p>Test</p> -->
             <header>
                 <h2>The Basic Language of the Web: HTML</h2>
                 <img src="img/img1.jpeg" height="50px" width="50px" alt="img1"> 
-                <p>Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p> 
+                <p id="author">Posted by <b>Laura Jones</b> on Monday, June 21st 2027</p> 
                 <img src="img/pic1.jpeg" alt="pic1">
             </header>
             <p>All modern websites and web applications are built using three <em>fundamental</em> technologies: HTML, CSS and JavaScript. 
@@ -67,23 +68,25 @@
         </article>
         <aside>
             <h4>Related posts</h4>
-            <ul>
+            <ul class="related-post">
                 <li>
                     <img src="img/pic2.jpeg" height="75" width="75" alt="person programming"><a href="#">How to learn Web Development</a>
-                    <p>By Joneas Schemedtmann</p>
+                    <p class="related-author">By Joneas Schemedtmann</p>
                 </li>
                 <li>
                     <img src="img/pic3.jpeg" height="75" width="75" alt="powers of css"><a href="#">The Unknown Powers of CSS</a>
-                    <p>By Jim Dillon</p>
+                    <p class="related-author">By Jim Dillon</p>
                 </li>
                 <li>
                     <img src="img/img2.jpeg" height="75" width="75" alt="javascript is awesome"><a href="#">Why Javascript is Awesome</a>
-                    <p>Bt Marilda</p>
+                    <p class="related-author">Bt Marilda</p>
                 </li>
             </ul>
         </aside>
         <footer>
+            <p id="copyright">
             Copyright &copy; 2027 by The Code Magazine.
+            </p>
         </footer>
     </body>
 </html>
