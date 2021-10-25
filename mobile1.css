@@ -36,6 +36,7 @@
 }
 .produce button:hover{
     background-color: #FDF2F8;
+    color:gray;     
 }
 .bakery button{
     background-color: #FDF2F8;

@@ -1,4 +1,7 @@
 
+*{
+    font-family: 'Lexend Deca', sans-serif;
+}
 .mobile_view{
     box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
     width:400px;
@@ -10,10 +13,14 @@
 }
 .title{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 100px;
     margin: 20px;
+    padding:20px;
 }
+/* .content{
+    margin:25px;  
+} */
 .delivery{
     display: grid;
     grid-template-columns: 375px;
@@ -54,27 +61,83 @@
 }
 .edit{
     color: #f1e868;
+    margin-left: 65px;
 }
 .instructions{
     text-align: center;
     color: #f1e868;
+    margin: -10px;
 }
 .delivery_status{
-    margin: 10px; 
+    /* margin: 10px;  */
 }
 .check_status{
     display: grid;
-    grid-template-columns: 40px 1fr;
-    grid-template-rows: 20px 20px;   
-    margin: 10px;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 10px 10px 150px 10px 10px;  
     padding: 15px;
     row-gap: 50px; 
 }
-.cart i{
+.shopping_cart i{
     border: 1px solid lightgray;
-    border-radius: 20px;
+    border-radius: 18px;
     padding: 10px;
+    background-color: #FEF3C7;
 }
 .shopping{
   margin: 10px;
+}
+.shopping_completed_cart i{
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #DBEAFE;
+}
+.shopping1 .driver p{
+    line-height: 0px;
+    color: gray;
+    margin: 10px;
+}
+.cart1 i{
+    border-radius: 15px;
+    padding: 6px;
+    background-color: #c8bbdd;
+    border: 5px solid #6D28D9;
+}
+.shopping1 strong{
+    color:#f19e70;
+    margin: 10px;
+}
+.cart2 i{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #e0f5e0;;
+    color:rgb(95, 197, 95);
+}
+.shopping2 {
+    color:gray;
+    margin: 10px;
+}
+.cart3 i{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #FDE68A;;
+  
+}
+.shopping3 {
+    margin: 10px;
+}
+.shopping1 img{
+    border-radius: 15px;
+}
+.lines{
+    list-style: none;
+    margin: auto;
+    margin-left: 1.1em;
+    min-height: 295px;
+    border-left: 2px dashed #f19e70;
+    padding: 0 0 50px 30px;
+    position: absolute;
+    margin-top: 52px;
+    z-index: -1;
 }
