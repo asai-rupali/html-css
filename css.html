@@ -1,10 +1,214 @@
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CSS</title>
-    </head>
-    <body>
-        <h1>CSS Grid</h1>
-        <p>Welcome to the Cascading Style Sheets</p>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        /* height: 150px; */
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container--1 {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 40px;
+        margin: 40px;
+
+        /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 200px 200px 100px 100px; */
+        /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+        /* grid-template-rows: 300px 200px; */
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
+        height: 500px;
+      }
+
+      .el--8{
+        grid-column: 2/3;
+        grid-row: 1/2;
+      }
+      .el--2{
+        /* grid-column: 1/ span 3; */
+        grid-row:2;
+        grid-column: 1/-1;
+      }
+
+      .container--2 {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: black;
+        font-size: 40px;
+        margin: 40px;
+
+        width: 700px;
+        height: 600px;
+
+        /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+
+        /* Aligning tracks inside container:distribute ampty space */
+        justify-content: center;
+        /* justify-content: space-between; */
+        align-content: center;
+        gap: 50px;
+        /* Aligning items INSIDE cells:moving items around inside cells */
+        align-items: center;
+        justify-items: center;
+        
+      }
+      /* .el--3{
+        align-self: center;
+        justify-self: center;
+      } */
+      .container--3{
+        width:900px;
+        margin: 0 auto;
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 75px 400px 75px;
+        column-gap: 30px;
+        row-gap: 30px; 
+      }
+      .header{
+        background-color:palevioletred;
+        grid-column: 1/-1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .aside{
+        background-color: greenyellow;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .article{
+        background-color: orange;
+        display: grid;
+        /* grid-template-rows: 210px 210px; */
+        grid-template-rows: repeat(2,200px);
+        justify-content: center;
+        align-items: center;
+      }
+      .footer{
+        background-color: palevioletred;
+        grid-column: 1/-1;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .Sub-article{
+        display: flex;
+        gap:25px;
+        align-items: flex-end;
+        
+      }
+      .image1{
+        background-color: yellow;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 170px;
+      }
+      .image2{
+        background-color: yellow;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 170px;
+      }
+      .image3{
+        background-color: yellow;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 170px;
+      }
+      .content{
+        text-align: center;
+        margin-top: 200px;
+      }
+
+     
+    </style>
+  </head>
+  <body>
+    <div class="container--1">
+      <div class="el el--1">(1) HTML</div>
+      <div class="el el--2">(2) and</div>
+      <div class="el el--3">(3) CSS</div>
+      <div class="el el--4">(4) are</div>
+      <div class="el el--5">(5) amazing</div>
+      <div class="el el--6">(6) languages</div>
+      <div class="el el--7">(7) to</div>
+      <div class="el el--8">(8) learn</div>
+    </div>
+
+    
+    <div class="container--2">
+      <div class="el el--1">(1)</div>
+      <div class="el el--3">(3)</div>
+      <div class="el el--4">(4)</div>
+      <div class="el el--5">(5)</div>
+      <div class="el el--6">(6)</div>
+      <div class="el el--7">(7)</div>
+    </div>
+    
+    <div class="container--3">
+        <div class="header">
+          <div class="sub-header">Header</div>
+        </div>
+        <div class="aside">
+          <div class="sub-aside">Aside</div>
+        </div>
+        <div class="article">
+          
+          <div class="content">Article</div>
+          <div class="Sub-article">
+              <div class="image1">Image</div>
+              <div class="image2">Image</div>
+              <div class="image3">Image</div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="sub-footer">Footer</div>
+        </div>
+    </div>
+    
+  </body>
 </html>

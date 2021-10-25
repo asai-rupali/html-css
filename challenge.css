@@ -64,7 +64,7 @@ body{
     padding:15px;
     width:100%;
     border-top:4px solid black;
-    margin-top: -7px;
+    /* margin-top: -7px; */
 }
 .add-cart:hover{
     color:#000;
@@ -147,20 +147,27 @@ h2::before{
     width:825px;
     margin: 0 auto;
 }
+.row{
+    display: flex;
+    align-items: flex-start;
+    gap:30px;
+}
 .sec1{
-    float:left;
+    /* float:left; */
 }
 .sec2{
-    width:240px;
-    float:left;
-    margin-left: 40px;
-    padding: 15px 15px;
+    /* width:243px; */
+    /* float:left; */
+    /* margin-left: 40px; */
+    flex: 0 0 243px;
+    margin-bottom: 0;
 }
 .sec3{
-    width:240px;
-    float:right;
-    margin-left:40px;
-    padding: 15px 15px;
+    /* width:243px; */
+    /* float:right; */
+    /* margin-left:40px; */
+    flex: 0 0 243px;
+    margin-bottom: 0;
 }
 
 

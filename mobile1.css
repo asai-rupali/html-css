@@ -1,0 +1,189 @@
+*{
+    font-family: 'Lexend Deca', sans-serif;
+}
+.mobile_view{
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
+    width:400px;
+    height:750px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px;
+    padding:20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    font-size: 18px;
+    margin: 10px;
+}
+.buttons button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 10px;
+    border:none;
+}
+.produce button{
+    background-color: #f19e70;
+    color: white;
+}
+.produce button:hover{
+    background-color: #FDF2F8;
+}
+.bakery button{
+    background-color: #FDF2F8;
+    color:gray;
+}
+.bakery button:hover{
+    background-color: #f19e70;
+}
+.seafood button{
+    background-color: #FDF2F8;
+    color:gray;
+}
+.seafood button:hover{
+    background-color: #f19e70;
+}
+.groceries{
+    display: grid;
+    grid-template-columns: 175px 175px;
+    grid-template-rows: 230px 230px;
+    column-gap: 10px;
+    row-gap: 10px; 
+    justify-content: center;
+    margin: 10px;
+}
+
+.avocado{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 10px;
+}
+.avocado_img{
+    display: flex;
+    justify-content: center;
+    margin: 15px 35px 15px 35px;
+    border-radius: 15px;
+    background-color: #FEF3C7;
+    padding: 10px;
+}
+.avocado_content{
+    margin: 10px;
+    
+}
+.avocado_subcontent{
+    color: gray;
+}
+.peanuts{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 10px;
+}
+.peanuts_img{
+    display: flex;
+    justify-content: center;
+    margin: 15px 35px 15px 35px;
+    border-radius: 15px;
+    background-color:#DBEAFE;
+    padding: 10px;
+}
+.peanuts_content{
+    margin: 10px;
+}
+.peanuts_subcontent{
+    color:gray;
+}
+.banana{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 10px;
+}
+.banana_img{
+    display: flex;
+    justify-content: center;
+    margin: 15px 35px 15px 35px;
+    border-radius: 15px;
+    background-color:#A5B4FC;
+    padding: 10px;
+}
+.price{
+    float:left;
+    
+}
+.add{
+    float:right;
+    background-color: rgb(173, 226, 173);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.banana{
+    background-color: #6D28D9;
+    color: white;
+}
+.banana_content{
+    margin: 10px;
+}
+.banana_subcontent{
+    display: flex;
+    gap:7px;
+}
+.remove{ 
+    background-color:rgb(146, 145, 145);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.add_one{
+    background-color:rgb(146, 145, 145);
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+.tomatoes{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 10px;
+}
+.tomatoes_img{
+    display: flex;
+    justify-content: center;
+    margin: 15px 35px 15px 35px;
+    border-radius: 15px;
+    background-color: #FCE7F3;
+    padding: 10px;
+}
+.tomatoes_content{
+    margin: 8px;
+}
+.tomatoes_subcontent{
+    color:gray;
+}
+.view_more{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+.view_more button{
+    padding: 10px 100px 10px 100px;
+    border-radius: 10px;
+    border:none;
+    background-color: #FDE68A;
+    font-size: 18px;
+    cursor: pointer;
+}
+.on_sale{
+    text-align: center;
+    font-size: 18px;
+}

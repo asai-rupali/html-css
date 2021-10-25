@@ -1,0 +1,80 @@
+
+.mobile_view{
+    box-shadow: 0px 0px 6px 0px rgb(0 0 0 / 30%);
+    width:400px;
+    height:750px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px;
+}
+.delivery{
+    display: grid;
+    grid-template-columns: 375px;
+    grid-template-rows: 150px 20px 150px;
+    column-gap: 10px;
+    row-gap: 10px; 
+    justify-content: center;
+    margin: 10px;
+    
+}
+.delivery_content{
+    background-color: #6D28D9;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    margin: 10px;
+}
+.delivery_content1{
+    display: grid;
+    grid-template-columns: 25px 180px 120px;
+    grid-template-rows: 20px 20px;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+}
+.clock{
+    margin-left: 5px;
+    color:#f1e868;   
+}
+.clock i{
+    background-color:rgb(146, 145, 145);
+    width: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.time{
+    color: #f1e868;
+}
+.edit{
+    color: #f1e868;
+}
+.instructions{
+    text-align: center;
+    color: #f1e868;
+}
+.delivery_status{
+    margin: 10px; 
+}
+.check_status{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 20px 20px;   
+    margin: 10px;
+    padding: 15px;
+    row-gap: 50px; 
+}
+.cart i{
+    border: 1px solid lightgray;
+    border-radius: 20px;
+    padding: 10px;
+}
+.shopping{
+  margin: 10px;
+}
